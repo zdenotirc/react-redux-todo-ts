@@ -1,9 +1,11 @@
-import { createStore, applyMiddleware } from 'redux'
-// Logger with default options
 import logger from 'redux-logger'
+import { createStore, applyMiddleware } from 'redux'
+import { State, reducer } from '../reducers'
 
-// We don't have any reducer yet
-// We give an empty reducer for now
-const store = createStore<any>(() => ({}), applyMiddleware(logger))
+/*
+ * We're giving State interface to create store
+ * store is type of State defined in our reducers
+ */
+const store = createStore<State>(reducer, applyMiddleware(logger))
 
 export default store
