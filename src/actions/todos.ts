@@ -26,7 +26,6 @@ export interface ToggleTodoAction { type: ActionTypes.TOGGLE_TODO, payload: { to
  * Define our actions creators
  * We are returning the right Action for each function
  */
-
 export function addTodo(name: string): AddTodoAction {
 
   return {
