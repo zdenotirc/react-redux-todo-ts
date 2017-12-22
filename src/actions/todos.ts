@@ -23,7 +23,7 @@ export interface AddTodoAction { type: ActionTypes.ADD_TODO, payload: { todo: To
 export interface ToggleTodoAction { type: ActionTypes.TOGGLE_TODO, payload: { todoId: number } }
 
 /*
- * Define our actions functions
+ * Define our actions creators
  * We are returning the right Action for each function
  */
 
