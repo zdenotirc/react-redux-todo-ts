@@ -4,7 +4,7 @@ import * as fromTodos from './todos'
 /*
  * This is the root state of the app
  * It contains every substate of the app
- */  
+ */
 export interface State {
   todos: fromTodos.State
 }
