@@ -19,8 +19,11 @@ export default class AddTodoForm extends React.Component<Props, State> {
         {
           todos.map(todo => (
             <li key={todo.id}
-              onClick={() => onTodoClicked(todo.id)}
-              style={{ textDecoration: `${todo.done ? 'line-through' : ''}`, cursor: 'pointer' }}>
+              onClick={() => {
+                onTodoClicked(todo.id)
+              }}
+              style={{ textDecoration: `${todo.done ? 'line-through' : ''}`, cursor: 'pointer' }}
+            >
               {todo.name}
             </li>)
           )
